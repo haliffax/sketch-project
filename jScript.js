@@ -1,9 +1,11 @@
 const container = document.querySelector('.container');
-
+const hover = document.getElementsByClassName('cell');
+// the first time the grid is made with the $inteiro variable
 let inteiro = 16;
 let qtd = inteiro * inteiro;
 setTable();
 
+// first time this function run the grid is set all white and the hover effect is black
 function setTable() {
   for (let i = 0; i < qtd; i++) {
     const div = document.createElement('div');
@@ -22,8 +24,8 @@ function setTable() {
   }
 }
 
-const hover = document.getElementsByClassName('cell');
 
+// when the Clear button is clicked the function setTable run with a size set by the prompt input
 const clear_btn = document.querySelector('#clear');
 clear_btn.addEventListener('click', e => {
   for (let it = 0; it < hover.length; it++) {
@@ -39,6 +41,7 @@ clear_btn.addEventListener('click', e => {
   }
 })
 
+// When the rainbow button is clicked the hover effect is set to random colors without clearing the grid
 const rainbow = document.querySelector('#rainbow');
 rainbow.addEventListener('click', e => {
   for (let it = 0; it < hover.length; it++) {
@@ -49,6 +52,7 @@ rainbow.addEventListener('click', e => {
   }
 })
 
+// If the blackAgain button is clicked the hover effect becomes black again whitout clearing the grid
 const blackAgain = document.querySelector('#black-again');
 blackAgain.addEventListener('click', e => {
   for (let it = 0; it < hover.length; it++) {
