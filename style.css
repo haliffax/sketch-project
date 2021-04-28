@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.head {
+  text-align: center;
+}
+.container {
+  margin: auto;
+  display: grid;
+  padding: 4rem;
+  background-color: hsla(200, 50%, 50%, 0.5);
+  width: 960px;
+  height: 50rem;
+}
+
+/* button {
+  width: 5rem;
+  height: 3rem;
+} */
+#rainbow {
+
+}
